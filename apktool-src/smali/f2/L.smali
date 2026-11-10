@@ -259,7 +259,9 @@
 
     invoke-static {v11, v5}, Lt/c;->a(LN/p;LZ/o;)V
 
-    sget-object v5, Lt/j;->a:Lt/b;
+    sget-object v5, Lt/j;->c:Lt/d;
+
+    const/16 v2, 0x8
 
     int-to-float v2, v2
 
@@ -267,11 +269,11 @@
 
     invoke-direct {v5, v2}, Lt/g;-><init>(F)V
 
-    sget-object v2, LZ/b;->m:LZ/f;
+    sget-object v2, LZ/b;->n:LZ/e;
 
     const/4 v13, 0x6
 
-    invoke-static {v5, v2, v11, v13}, Lt/N;->a(Lt/f;LZ/f;LN/p;I)Lt/O;
+    invoke-static {v5, v2, v11, v13}, Lt/q;->a(Lt/h;LZ/e;LN/p;I)Lt/r;
 
     move-result-object v2
 
@@ -341,7 +343,7 @@
 
     invoke-static {v2, v11, v14}, LN/d;->Q(LJ1/e;LN/p;Ljava/lang/Object;)V
 
-    sget-object v2, Lt/P;->a:Lt/P;
+    nop
 
     const v5, 0x2d235b6a
 
@@ -383,7 +385,9 @@
 
     invoke-virtual {v11, v12}, LN/p;->q(Z)V
 
-    invoke-static {v2, v4, v1}, Lt/P;->a(Lt/P;LZ/o;F)LZ/o;
+    const/high16 v5, 0x3f800000    # 1.0f
+
+    invoke-static {v4, v5}, Landroidx/compose/foundation/layout/c;->b(LZ/o;F)LZ/o;
 
     move-result-object v16
 
@@ -452,7 +456,9 @@
 
     invoke-virtual {v11, v12}, LN/p;->q(Z)V
 
-    invoke-static {v2, v4, v1}, Lt/P;->a(Lt/P;LZ/o;F)LZ/o;
+    const/high16 v5, 0x3f800000    # 1.0f
+
+    invoke-static {v4, v5}, Landroidx/compose/foundation/layout/c;->b(LZ/o;F)LZ/o;
 
     move-result-object v16
 
@@ -532,7 +538,9 @@
 
     invoke-virtual {v11, v12}, LN/p;->q(Z)V
 
-    invoke-static {v2, v4, v1}, Lt/P;->a(Lt/P;LZ/o;F)LZ/o;
+    const/high16 v5, 0x3f800000    # 1.0f
+
+    invoke-static {v4, v5}, Landroidx/compose/foundation/layout/c;->b(LZ/o;F)LZ/o;
 
     move-result-object v16
 
