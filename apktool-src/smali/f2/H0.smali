@@ -140,7 +140,7 @@
 
     invoke-virtual {v1, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    const-string v0, "\u042d\u043a\u0441\u043f\u043e\u0440\u0442 CSV (\u043e\u0431\u043b\u0430\u043a\u043e / \u043f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f)"
+    const-string v0, "\u042d\u043a\u0441\u043f\u043e\u0440\u0442 \u0432 \u043e\u0431\u043b\u0430\u043a\u043e / \u043f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f"
 
     invoke-static {v1, v0}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
 
@@ -325,7 +325,7 @@
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_1
 
     :goto_1
-    const-string v0, "CSV \u0441\u043e\u0445\u0440\u0430\u043d\u0451\u043d \u0432 \u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438"
+    const-string v0, "\u042d\u043a\u0441\u043f\u043e\u0440\u0442: CSV \u0441\u043e\u0445\u0440\u0430\u043d\u0451\u043d \u0432 \u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438"
 
     goto :goto_3
 
@@ -396,7 +396,7 @@
 
     if-nez v0, :cond_imp_read
 
-    const-string v0, "\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435 platezhi.csv \u0432 \u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438"
+    const-string v0, "\u0418\u043c\u043f\u043e\u0440\u0442: \u043f\u043e\u043b\u043e\u0436\u0438\u0442\u0435 platezhi.csv \u0432 \u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438"
 
     const/4 v3, 0x1
 
@@ -418,6 +418,12 @@
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v4
+
+    const-string v8, "payments"
+
+    const/4 v9, 0x0
+
+    invoke-virtual {v4, v8, v9, v9}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
     new-instance v5, Ljava/io/BufferedReader;
 
@@ -469,7 +475,7 @@
     :try_start_i4
     invoke-virtual {v2}, Ld2/b;->c()V
 
-    const-string v0, "\u0418\u043c\u043f\u043e\u0440\u0442 CSV \u0437\u0430\u0432\u0435\u0440\u0448\u0451\u043d"
+    const-string v0, "\u0418\u043c\u043f\u043e\u0440\u0442 \u0437\u0430\u0432\u0435\u0440\u0448\u0451\u043d: \u0434\u0430\u043d\u043d\u044b\u0435 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u044b"
 
     const/4 v3, 0x1
 
@@ -493,7 +499,7 @@
     :catch_imp
     move-exception v0
 
-    const-string v0, "\u041e\u0448\u0438\u0431\u043a\u0430 \u0438\u043c\u043f\u043e\u0440\u0442\u0430 CSV"
+    const-string v0, "\u041e\u0448\u0438\u0431\u043a\u0430 \u0438\u043c\u043f\u043e\u0440\u0442\u0430: \u043f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u0444\u0430\u0439\u043b CSV"
 
     const/4 v3, 0x1
 
