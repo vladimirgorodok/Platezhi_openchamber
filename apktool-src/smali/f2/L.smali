@@ -540,7 +540,7 @@
 
     move-result-object v18
 
-    sget-object v24, Lf2/a0;->c:LV/a;
+    sget-object v24, Lf2/a0;->e:LV/a;
 
     const/high16 v26, 0x30000000
 

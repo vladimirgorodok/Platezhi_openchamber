@@ -1047,7 +1047,7 @@
 
     const v40, 0x1fffa
 
-    const-string v16, "\u0421\u0431\u0440\u043e\u0441\u0438\u0442\u044c \u0438 \u0438\u043c\u043f\u043e\u0440\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0437\u0430\u043d\u043e\u0432\u043e"
+    const-string v16, "\u0418\u043c\u043f\u043e\u0440\u0442 \u0438\u0437 CSV"
 
     const/16 v17, 0x0
 
@@ -1413,7 +1413,7 @@
 
     const v65, 0x1fffe
 
-    const-string v41, "\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f"
+    const-string v41, "\u042d\u043a\u0441\u043f\u043e\u0440\u0442 (\u043e\u0431\u043b\u0430\u043a\u043e)"
 
     const/16 v42, 0x0
 
@@ -1731,7 +1731,7 @@
 
     const v65, 0x1fffe
 
-    const-string v41, "\u0412 \u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438"
+    const-string v41, "\u042d\u043a\u0441\u043f\u043e\u0440\u0442 (\u0432 \u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438)"
 
     const/16 v42, 0x0
 
