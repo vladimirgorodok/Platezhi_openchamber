@@ -1,0 +1,24 @@
+package O;
+
+import A.C0021k0;
+import E.C0072n;
+import N.C0197d;
+import N.C0228t;
+import N.F0;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class f extends C {
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public static final f f3601c;
+
+    static {
+        int i2 = 0;
+        f3601c = new f(i2, i2, 3);
+    }
+
+    @Override // O.C
+    public final void a(C0072n c0072n, C0021k0 c0021k0, F0 f3, C0228t c0228t) {
+        C0197d.z(f3, c0228t);
+    }
+}

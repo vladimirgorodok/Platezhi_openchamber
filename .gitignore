@@ -1,0 +1,10 @@
+# Build artifacts
+*.idsig
+*-unsigned.apk
+*-aligned.apk
+debug.keystore
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
