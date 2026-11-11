@@ -113,7 +113,7 @@
 
     check-cast v11, LK/w2;
 
-    iget-object v11, v11, LK/w2;->h:LG0/J;
+    const/4 v11, 0x0
 
     const/16 v38, 0x0
 
@@ -171,7 +171,7 @@
 
     move-object/from16 v11, p1
 
-    nop
+    invoke-static {v11, v3}, Lt/c;->a(LN/p;LZ/o;)V
 
     check-cast v10, Ld2/b;
 
