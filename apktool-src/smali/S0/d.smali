@@ -7234,6 +7234,92 @@
 
     move-result-object v35
 
+    new-instance v9, Lg/d;
+
+    const/4 v10, 0x2
+
+    invoke-direct {v9, v10}, Lg/d;-><init>(I)V
+
+    const v10, 0x773a5001
+
+    invoke-virtual {v4, v10}, LN/p;->S(I)V
+
+    invoke-virtual {v4}, LN/p;->I()Ljava/lang/Object;
+
+    move-result-object v10
+
+    if-ne v10, v15, :cond_imp1
+
+    new-instance v10, Lf2/ImportCb;
+
+    sget-object v11, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->b:LN/S0;
+
+    invoke-virtual {v4, v11}, LN/p;->k(LN/p0;)Ljava/lang/Object;
+
+    move-result-object v11
+
+    check-cast v11, Landroid/content/Context;
+
+    invoke-direct {v10, v11, v6}, Lf2/ImportCb;-><init>(Landroid/content/Context;Ld2/b;)V
+
+    invoke-virtual {v4, v10}, LN/p;->c0(Ljava/lang/Object;)V
+
+    :cond_imp1
+    check-cast v10, LJ1/c;
+
+    invoke-virtual {v4, v14}, LN/p;->q(Z)V
+
+    const/16 v11, 0x30
+
+    invoke-static {v9, v10, v4, v11}, LS0/d;->M(LS0/j;LJ1/c;LN/p;I)Ld/i;
+
+    move-result-object v10
+
+    sput-object v10, Lf2/Transfer;->filePicker:Ld/i;
+
+    new-instance v9, Lg/d;
+
+    const/4 v10, 0x3
+
+    invoke-direct {v9, v10}, Lg/d;-><init>(I)V
+
+    const v10, 0x773a5002
+
+    invoke-virtual {v4, v10}, LN/p;->S(I)V
+
+    invoke-virtual {v4}, LN/p;->I()Ljava/lang/Object;
+
+    move-result-object v10
+
+    if-ne v10, v15, :cond_imp2
+
+    new-instance v10, Lf2/ImportCb;
+
+    sget-object v11, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->b:LN/S0;
+
+    invoke-virtual {v4, v11}, LN/p;->k(LN/p0;)Ljava/lang/Object;
+
+    move-result-object v11
+
+    check-cast v11, Landroid/content/Context;
+
+    invoke-direct {v10, v11, v6}, Lf2/ImportCb;-><init>(Landroid/content/Context;Ld2/b;)V
+
+    invoke-virtual {v4, v10}, LN/p;->c0(Ljava/lang/Object;)V
+
+    :cond_imp2
+    check-cast v10, LJ1/c;
+
+    invoke-virtual {v4, v14}, LN/p;->q(Z)V
+
+    const/16 v11, 0x30
+
+    invoke-static {v9, v10, v4, v11}, LS0/d;->M(LS0/j;LJ1/c;LN/p;I)Ld/i;
+
+    move-result-object v10
+
+    sput-object v10, Lf2/Transfer;->cloudPicker:Ld/i;
+
     sget-object v10, LZ/l;->a:LZ/l;
 
     sget-object v9, Landroidx/compose/foundation/layout/c;->b:Landroidx/compose/foundation/layout/FillElement;
@@ -7710,10 +7796,6 @@
     const/4 v0, 0x0
 
     const/4 v1, 0x0
-
-    invoke-static/range {v0 .. v5}, LS0/j;->a(LZ/o;ILV/a;LN/p;II)V
-
-    sget-object v2, Lf2/a0;->f:LV/a;
 
     invoke-static/range {v0 .. v5}, LS0/j;->a(LZ/o;ILV/a;LN/p;II)V
 

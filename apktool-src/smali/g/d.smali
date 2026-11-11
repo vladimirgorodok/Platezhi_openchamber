@@ -27,6 +27,7 @@
 
     packed-switch v0, :pswitch_data_0
 
+    :pswitch_perm
     check-cast p2, Ljava/lang/String;
 
     filled-new-array {p2}, [Ljava/lang/String;
@@ -264,9 +265,46 @@
     :goto_2
     return-object p1
 
+    :pswitch_csv
+    new-instance p1, Landroid/content/Intent;
+
+    const-string v0, "android.intent.action.OPEN_DOCUMENT"
+
+    invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v0, "android.intent.category.OPENABLE"
+
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string v0, "text/csv"
+
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
+
+    return-object p1
+
+    :pswitch_all
+    new-instance p1, Landroid/content/Intent;
+
+    const-string v0, "android.intent.action.OPEN_DOCUMENT"
+
+    invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v0, "android.intent.category.OPENABLE"
+
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string v0, "*/*"
+
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
+
+    return-object p1
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
+        :pswitch_perm
+        :pswitch_csv
+        :pswitch_all
     .end packed-switch
 .end method
 
@@ -277,6 +315,7 @@
 
     packed-switch v0, :pswitch_data_0
 
+    :pswitch_perm
     check-cast p2, Ljava/lang/String;
 
     invoke-static {p1, p2}, LS0/g;->t(Landroid/content/Context;Ljava/lang/String;)I
@@ -308,9 +347,22 @@
 
     return-object p1
 
+    :pswitch_csv
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :pswitch_all
+    const/4 p1, 0x0
+
+    return-object p1
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
+        :pswitch_perm
+        :pswitch_csv
+        :pswitch_all
     .end packed-switch
 .end method
 
@@ -321,6 +373,7 @@
 
     packed-switch v0, :pswitch_data_0
 
+    :pswitch_perm
     if-eqz p1, :cond_3
 
     const/4 v0, -0x1
@@ -477,8 +530,29 @@
     :goto_7
     return-object v1
 
+    :pswitch_doc
+    const/4 v0, -0x1
+
+    if-ne p2, v0, :doc_null
+
+    if-eqz p1, :doc_null
+
+    invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+
+    move-result-object v1
+
+    return-object v1
+
+    :doc_null
+    const/4 v1, 0x0
+
+    return-object v1
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
+        :pswitch_perm
+        :pswitch_doc
+        :pswitch_doc
     .end packed-switch
 .end method

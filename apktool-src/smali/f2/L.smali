@@ -115,53 +115,9 @@
 
     iget-object v11, v11, LK/w2;->h:LG0/J;
 
-    const/16 v38, 0x0
-
-    const v39, 0xfffe
-
-    const-string v14, "\u0414\u0430\u043d\u043d\u044b\u0435"
-
     move-object/from16 p1, v15
 
-    move-object v15, v14
-
-    const/16 v16, 0x0
-
-    const-wide/16 v17, 0x0
-
-    const-wide/16 v19, 0x0
-
-    const/16 v21, 0x0
-
-    const/16 v22, 0x0
-
-    const/16 v23, 0x0
-
-    const-wide/16 v24, 0x0
-
-    const/16 v26, 0x0
-
-    const/16 v27, 0x0
-
-    const-wide/16 v28, 0x0
-
-    const/16 v30, 0x0
-
-    const/16 v31, 0x0
-
-    const/16 v32, 0x0
-
-    const/16 v33, 0x0
-
-    const/16 v34, 0x0
-
-    const/16 v37, 0x6
-
-    move-object/from16 v35, v11
-
-    move-object/from16 v36, p1
-
-    invoke-static/range {v15 .. v39}, LK/r2;->b(Ljava/lang/String;LZ/o;JJLL0/j;LL0/l;LL0/r;JLR0/j;LR0/i;JIZIILJ1/c;LG0/J;LN/p;III)V
+    check-cast v10, Ld2/b;
 
     int-to-float v3, v3
 
@@ -173,81 +129,6 @@
 
     invoke-static {v11, v3}, Lt/c;->a(LN/p;LZ/o;)V
 
-    check-cast v10, Ld2/b;
-
-    invoke-virtual {v10}, Ld2/b;->b()Ljava/util/List;
-
-    move-result-object v3
-
-    invoke-interface {v3}, Ljava/util/List;->size()I
-
-    move-result v3
-
-    const-string v14, "\u0417\u0430\u043f\u0438\u0441\u0435\u0439 \u0432 \u0431\u0430\u0437\u0435: "
-
-    invoke-static {v14, v3}, LA/a0;->d(Ljava/lang/String;I)Ljava/lang/String;
-
-    move-result-object v15
-
-    invoke-virtual {v11, v5}, LN/p;->k(LN/p0;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, LK/w2;
-
-    iget-object v3, v3, LK/w2;->l:LG0/J;
-
-    sget-object v5, LK/z;->a:LN/S0;
-
-    invoke-virtual {v11, v5}, LN/p;->k(LN/p0;)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, LK/x;
-
-    iget-wide v13, v5, LK/x;->s:J
-
-    const/16 v38, 0x0
-
-    const v39, 0xfffa
-
-    const/16 v16, 0x0
-
-    const-wide/16 v19, 0x0
-
-    const/16 v21, 0x0
-
-    const/16 v22, 0x0
-
-    const/16 v23, 0x0
-
-    const-wide/16 v24, 0x0
-
-    const/16 v26, 0x0
-
-    const/16 v27, 0x0
-
-    const-wide/16 v28, 0x0
-
-    const/16 v30, 0x0
-
-    const/16 v31, 0x0
-
-    const/16 v32, 0x0
-
-    const/16 v33, 0x0
-
-    const/16 v34, 0x0
-
-    const/16 v37, 0x0
-
-    move-wide/from16 v17, v13
-
-    move-object/from16 v35, v3
-
-    move-object/from16 v36, v11
-
-    invoke-static/range {v15 .. v39}, LK/r2;->b(Ljava/lang/String;LZ/o;JJLL0/j;LL0/l;LL0/r;JLR0/j;LR0/i;JIZIILJ1/c;LG0/J;LN/p;III)V
 
     const/16 v3, 0xe
 
@@ -370,9 +251,9 @@
     if-ne v8, v13, :cond_6
 
     :cond_5
-    new-instance v8, Lf2/H0;
+    new-instance v8, Lf2/Transfer;
 
-    invoke-direct {v8, v9, v10, v12}, Lf2/H0;-><init>(Landroid/content/Context;Ld2/b;I)V
+    invoke-direct {v8, v9, v10, v12}, Lf2/Transfer;-><init>(Landroid/content/Context;Ld2/b;I)V
 
     invoke-virtual {v11, v8}, LN/p;->c0(Ljava/lang/Object;)V
 
@@ -436,11 +317,11 @@
     if-ne v8, v13, :cond_8
 
     :cond_7
-    new-instance v8, Lf2/H0;
+    new-instance v8, Lf2/Transfer;
 
     const/4 v5, 0x1
 
-    invoke-direct {v8, v9, v10, v5}, Lf2/H0;-><init>(Landroid/content/Context;Ld2/b;I)V
+    invoke-direct {v8, v9, v10, v5}, Lf2/Transfer;-><init>(Landroid/content/Context;Ld2/b;I)V
 
     invoke-virtual {v11, v8}, LN/p;->c0(Ljava/lang/Object;)V
 
@@ -501,13 +382,11 @@
 
     if-ne v1, v13, :cond_9
 
-    new-instance v1, Lf2/e;
+    new-instance v1, Lf2/Transfer;
 
-    check-cast v7, LN/c0;
+    const/4 v2, 0x2
 
-    const/16 v2, 0x11
-
-    invoke-direct {v1, v7, v2}, Lf2/e;-><init>(LN/c0;I)V
+    invoke-direct {v1, v9, v10, v2}, Lf2/Transfer;-><init>(Landroid/content/Context;Ld2/b;I)V
 
     invoke-virtual {v11, v1}, LN/p;->c0(Ljava/lang/Object;)V
 
@@ -543,6 +422,107 @@
     move-object/from16 v25, v11
 
     invoke-static/range {v15 .. v27}, LK/V1;->g(LJ1/a;LZ/o;ZLg0/S;LK/n;LK/r;Lo/u;Lt/I;Ls/k;LJ1/f;LN/p;II)V
+
+    const v5, 0x2d235b6c
+
+    invoke-virtual {v11, v5}, LN/p;->S(I)V
+
+    invoke-virtual {v11, v9}, LN/p;->h(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    invoke-virtual {v11, v10}, LN/p;->h(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    or-int/2addr v5, v8
+
+    invoke-virtual {v11}, LN/p;->I()Ljava/lang/Object;
+
+    move-result-object v8
+
+    if-nez v5, :cond_5c
+
+    if-ne v8, v13, :cond_6c
+
+    :cond_5c
+    new-instance v8, Lf2/Transfer;
+
+    const/4 v5, 0x3
+
+    invoke-direct {v8, v9, v10, v5}, Lf2/Transfer;-><init>(Landroid/content/Context;Ld2/b;I)V
+
+    invoke-virtual {v11, v8}, LN/p;->c0(Ljava/lang/Object;)V
+
+    :cond_6c
+    move-object v15, v8
+
+    check-cast v15, LJ1/a;
+
+    invoke-virtual {v11, v12}, LN/p;->q(Z)V
+
+    const v5, 0x2d235b6d
+
+    invoke-virtual {v11, v5}, LN/p;->S(I)V
+
+    invoke-virtual {v11}, LN/p;->I()Ljava/lang/Object;
+
+    move-result-object v5
+
+    if-ne v5, v13, :cond_7c
+
+    new-instance v5, Lf2/Lbl;
+
+    invoke-direct {v5}, Lf2/Lbl;-><init>()V
+
+    new-instance v8, LV/a;
+
+    const v1, 0x2d235b6e
+
+    const/4 v2, 0x0
+
+    invoke-direct {v8, v1, v5, v2}, LV/a;-><init>(ILjava/lang/Object;Z)V
+
+    move-object v5, v8
+
+    invoke-virtual {v11, v5}, LN/p;->c0(Ljava/lang/Object;)V
+
+    :cond_7c
+    move-object/from16 v24, v5
+
+    invoke-virtual {v11, v12}, LN/p;->q(Z)V
+
+    sget-object v2, Lt/P;->a:Lt/P;
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    invoke-static {v2, v4, v1}, Lt/P;->a(Lt/P;LZ/o;F)LZ/o;
+
+    move-result-object v16
+
+    invoke-static {v3}, Lz/e;->a(F)Lz/d;
+
+    move-result-object v18
+
+    const/high16 v26, 0x30000000
+
+    const/16 v27, 0x1f4
+
+    const/16 v17, 0x0
+
+    const/16 v19, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    const/16 v22, 0x0
+
+    const/16 v23, 0x0
+
+    move-object/from16 v25, v11
+
+    invoke-static/range {v15 .. v27}, LK/V1;->c(LJ1/a;LZ/o;ZLg0/S;LK/n;LK/r;Lo/u;Lt/I;Ls/k;LV/a;LN/p;II)V
 
     :goto_2
     return-object v6
