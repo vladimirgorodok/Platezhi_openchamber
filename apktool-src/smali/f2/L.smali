@@ -68,9 +68,9 @@
 
     packed-switch v14, :pswitch_data_0
 
-    move-object/from16 v14, p1
+    sget-object v6, Lw1/l;->a:Lw1/l;
 
-    check-cast v14, Lt/s;
+    return-object v6
 
     move-object/from16 v15, p2
 
