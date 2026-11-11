@@ -239,7 +239,7 @@
 
     if-nez v0, :m1
 
-    invoke-virtual {p0}, Lf2/Transfer;->exportToFile()V
+    invoke-direct {p0}, Lf2/Transfer;->exportToFile()V
 
     goto :done
 
@@ -248,7 +248,7 @@
 
     if-ne v0, v1, :m2
 
-    invoke-virtual {p0}, Lf2/Transfer;->importFromFile()V
+    invoke-direct {p0}, Lf2/Transfer;->importFromFile()V
 
     goto :done
 
@@ -257,12 +257,12 @@
 
     if-ne v0, v1, :m3
 
-    invoke-virtual {p0}, Lf2/Transfer;->exportCloud()V
+    invoke-direct {p0}, Lf2/Transfer;->exportCloud()V
 
     goto :done
 
     :m3
-    invoke-virtual {p0}, Lf2/Transfer;->importCloud()V
+    invoke-direct {p0}, Lf2/Transfer;->importCloud()V
 
     :done
     sget-object v0, Lw1/l;->a:Lw1/l;
@@ -288,7 +288,7 @@
     if-nez v2, :cloud_path
 
     :share_path
-    invoke-virtual {p0}, Lf2/Transfer;->shareCsv()V
+    invoke-direct {p0}, Lf2/Transfer;->shareCsv()V
 
     goto :done
 
