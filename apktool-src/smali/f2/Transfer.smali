@@ -349,7 +349,7 @@
 
     const/16 v3, 0x1d
 
-    if-ge v2, v3, :legacy
+    if-lt v2, v3, :legacy
 
     new-instance v2, Landroid/content/ContentValues;
 

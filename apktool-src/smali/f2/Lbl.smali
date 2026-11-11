@@ -63,6 +63,16 @@
 
     :cond_10
     :goto_b
+    sget-object v0, LK/z;->a:LN/S0;
+
+    invoke-virtual {v1, v0}, LN/p;->k(LN/p0;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, LK/x;
+
+    iget-wide v2, v0, LK/x;->w:J
+
     const/16 v39, 0x0
 
     const v40, 0x1fffa
@@ -71,7 +81,7 @@
 
     const/16 v17, 0x0
 
-    const-wide/16 v18, 0x0
+    move-wide/from16 v18, v2
 
     const-wide/16 v20, 0x0
 

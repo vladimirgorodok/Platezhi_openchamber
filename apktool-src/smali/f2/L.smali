@@ -490,6 +490,8 @@
     :cond_7c
     move-object/from16 v24, v5
 
+    check-cast v24, LV/a;
+
     invoke-virtual {v11, v12}, LN/p;->q(Z)V
 
     sget-object v2, Lt/P;->a:Lt/P;
