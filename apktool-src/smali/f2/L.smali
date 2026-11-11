@@ -68,9 +68,9 @@
 
     packed-switch v14, :pswitch_data_0
 
-    sget-object v6, Lw1/l;->a:Lw1/l;
+    move-object/from16 v14, p1
 
-    return-object v6
+    check-cast v14, Lt/s;
 
     move-object/from16 v15, p2
 
@@ -259,9 +259,7 @@
 
     invoke-static {v11, v5}, Lt/c;->a(LN/p;LZ/o;)V
 
-    sget-object v5, Lt/j;->c:Lt/d;
-
-    const/16 v2, 0x8
+    sget-object v5, Lt/j;->a:Lt/b;
 
     int-to-float v2, v2
 
@@ -269,11 +267,11 @@
 
     invoke-direct {v5, v2}, Lt/g;-><init>(F)V
 
-    sget-object v2, LZ/b;->n:LZ/e;
+    sget-object v2, LZ/b;->m:LZ/f;
 
     const/4 v13, 0x6
 
-    invoke-static {v5, v2, v11, v13}, Lt/q;->a(Lt/h;LZ/e;LN/p;I)Lt/r;
+    invoke-static {v5, v2, v11, v13}, Lt/N;->a(Lt/f;LZ/f;LN/p;I)Lt/O;
 
     move-result-object v2
 
@@ -343,7 +341,7 @@
 
     invoke-static {v2, v11, v14}, LN/d;->Q(LJ1/e;LN/p;Ljava/lang/Object;)V
 
-    nop
+    sget-object v2, Lt/P;->a:Lt/P;
 
     const v5, 0x2d235b6a
 
@@ -385,9 +383,7 @@
 
     invoke-virtual {v11, v12}, LN/p;->q(Z)V
 
-    const/high16 v5, 0x3f800000    # 1.0f
-
-    invoke-static {v4, v5}, Landroidx/compose/foundation/layout/c;->b(LZ/o;F)LZ/o;
+    invoke-static {v2, v4, v1}, Lt/P;->a(Lt/P;LZ/o;F)LZ/o;
 
     move-result-object v16
 
@@ -417,7 +413,6 @@
 
     invoke-static/range {v15 .. v27}, LK/V1;->c(LJ1/a;LZ/o;ZLg0/S;LK/n;LK/r;Lo/u;Lt/I;Ls/k;LV/a;LN/p;II)V
 
-    # Button 2: Export/Cloud (share) mode 1
     const v5, 0x2d23d198
 
     invoke-virtual {v11, v5}, LN/p;->S(I)V
@@ -456,9 +451,7 @@
 
     invoke-virtual {v11, v12}, LN/p;->q(Z)V
 
-    const/high16 v5, 0x3f800000    # 1.0f
-
-    invoke-static {v4, v5}, Landroidx/compose/foundation/layout/c;->b(LZ/o;F)LZ/o;
+    invoke-static {v2, v4, v1}, Lt/P;->a(Lt/P;LZ/o;F)LZ/o;
 
     move-result-object v16
 
@@ -466,11 +459,9 @@
 
     move-result-object v18
 
-    sget-object v24, Lf2/a0;->d:LV/a;
+    const/16 v21, 0x0
 
-    const/high16 v26, 0x30000000
-
-    const/16 v27, 0x1f4
+    const/high16 v25, 0x30000000
 
     const/16 v17, 0x0
 
@@ -478,97 +469,13 @@
 
     const/16 v20, 0x0
 
-    const/16 v21, 0x0
-
     const/16 v22, 0x0
 
     const/16 v23, 0x0
 
-    move-object/from16 v25, v11
+    move-object/from16 v24, v11
 
-    invoke-static/range {v15 .. v27}, LK/V1;->c(LJ1/a;LZ/o;ZLg0/S;LK/n;LK/r;Lo/u;Lt/I;Ls/k;LV/a;LN/p;II)V
-
-    # spacing
-    const/16 v5, 0x8
-
-    int-to-float v5, v5
-
-    invoke-static {v4, v5}, Landroidx/compose/foundation/layout/c;->c(LZ/o;F)LZ/o;
-
-    move-result-object v5
-
-    invoke-static {v11, v5}, Lt/c;->a(LN/p;LZ/o;)V
-
-    # Button 3: Import mode 2
-    const v5, 0x2d23f000
-
-    invoke-virtual {v11, v5}, LN/p;->S(I)V
-
-    invoke-virtual {v11, v9}, LN/p;->h(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    invoke-virtual {v11, v10}, LN/p;->h(Ljava/lang/Object;)Z
-
-    move-result v8
-
-    or-int/2addr v5, v8
-
-    invoke-virtual {v11}, LN/p;->I()Ljava/lang/Object;
-
-    move-result-object v8
-
-    if-nez v5, :cond_i7
-
-    if-ne v8, v13, :cond_i8
-
-    :cond_i7
-    new-instance v8, Lf2/H0;
-
-    const/4 v5, 0x2
-
-    invoke-direct {v8, v9, v10, v5}, Lf2/H0;-><init>(Landroid/content/Context;Ld2/b;I)V
-
-    invoke-virtual {v11, v8}, LN/p;->c0(Ljava/lang/Object;)V
-
-    :cond_i8
-    move-object v15, v8
-
-    check-cast v15, LJ1/a;
-
-    invoke-virtual {v11, v12}, LN/p;->q(Z)V
-
-    const/high16 v5, 0x3f800000    # 1.0f
-
-    invoke-static {v4, v5}, Landroidx/compose/foundation/layout/c;->b(LZ/o;F)LZ/o;
-
-    move-result-object v16
-
-    invoke-static {v3}, Lz/e;->a(F)Lz/d;
-
-    move-result-object v18
-
-    sget-object v24, Lf2/a0;->e:LV/a;
-
-    const/high16 v26, 0x30000000
-
-    const/16 v27, 0x1f4
-
-    const/16 v17, 0x0
-
-    const/16 v19, 0x0
-
-    const/16 v20, 0x0
-
-    const/16 v21, 0x0
-
-    const/16 v22, 0x0
-
-    const/16 v23, 0x0
-
-    move-object/from16 v25, v11
-
-    invoke-static/range {v15 .. v27}, LK/V1;->c(LJ1/a;LZ/o;ZLg0/S;LK/n;LK/r;Lo/u;Lt/I;Ls/k;LV/a;LN/p;II)V
+    invoke-static/range {v15 .. v25}, LK/V1;->f(LJ1/a;LZ/o;ZLg0/S;LK/n;LK/r;Lo/u;Lt/I;Ls/k;LN/p;I)V
 
     const/4 v1, 0x1
 
@@ -583,6 +490,59 @@
     move-result-object v1
 
     invoke-static {v11, v1}, Lt/c;->a(LN/p;LZ/o;)V
+
+    const v1, 0x616b072f
+
+    invoke-virtual {v11, v1}, LN/p;->S(I)V
+
+    invoke-virtual {v11}, LN/p;->I()Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-ne v1, v13, :cond_9
+
+    new-instance v1, Lf2/e;
+
+    check-cast v7, LN/c0;
+
+    const/16 v2, 0x11
+
+    invoke-direct {v1, v7, v2}, Lf2/e;-><init>(LN/c0;I)V
+
+    invoke-virtual {v11, v1}, LN/p;->c0(Ljava/lang/Object;)V
+
+    :cond_9
+    move-object v15, v1
+
+    check-cast v15, LJ1/a;
+
+    invoke-virtual {v11, v12}, LN/p;->q(Z)V
+
+    sget-object v24, Lf2/a0;->e:LV/a;
+
+    const v26, 0x30000006
+
+    const/16 v27, 0x1fe
+
+    const/16 v16, 0x0
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x0
+
+    const/16 v19, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    const/16 v22, 0x0
+
+    const/16 v23, 0x0
+
+    move-object/from16 v25, v11
+
+    invoke-static/range {v15 .. v27}, LK/V1;->g(LJ1/a;LZ/o;ZLg0/S;LK/n;LK/r;Lo/u;Lt/I;Ls/k;LJ1/f;LN/p;II)V
 
     :goto_2
     return-object v6
