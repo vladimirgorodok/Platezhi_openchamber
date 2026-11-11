@@ -3270,7 +3270,11 @@
 
     const-string v4, "onOpenSettings"
 
+    if-eqz v11, :cond_settings_null
+
     invoke-static {v11, v4}, LK1/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    :cond_settings_null
 
     const v4, 0x79d03d5a
 
