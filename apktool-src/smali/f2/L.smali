@@ -68,9 +68,9 @@
 
     packed-switch v14, :pswitch_data_0
 
-    move-object/from16 v14, p1
+    sget-object v6, Lw1/l;->a:Lw1/l;
 
-    check-cast v14, Lt/s;
+    return-object v6
 
     move-object/from16 v15, p2
 
@@ -113,7 +113,7 @@
 
     check-cast v11, LK/w2;
 
-    const/4 v11, 0x0
+    iget-object v11, v11, LK/w2;->h:LG0/J;
 
     const/16 v38, 0x0
 
@@ -583,59 +583,6 @@
     move-result-object v1
 
     invoke-static {v11, v1}, Lt/c;->a(LN/p;LZ/o;)V
-
-    const v1, 0x616b072f
-
-    invoke-virtual {v11, v1}, LN/p;->S(I)V
-
-    invoke-virtual {v11}, LN/p;->I()Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-ne v1, v13, :cond_9
-
-    new-instance v1, Lf2/e;
-
-    check-cast v7, LN/c0;
-
-    const/16 v2, 0x11
-
-    invoke-direct {v1, v7, v2}, Lf2/e;-><init>(LN/c0;I)V
-
-    invoke-virtual {v11, v1}, LN/p;->c0(Ljava/lang/Object;)V
-
-    :cond_9
-    move-object v15, v1
-
-    check-cast v15, LJ1/a;
-
-    invoke-virtual {v11, v12}, LN/p;->q(Z)V
-
-    sget-object v24, Lf2/a0;->e:LV/a;
-
-    const v26, 0x30000006
-
-    const/16 v27, 0x1fe
-
-    const/16 v16, 0x0
-
-    const/16 v17, 0x0
-
-    const/16 v18, 0x0
-
-    const/16 v19, 0x0
-
-    const/16 v20, 0x0
-
-    const/16 v21, 0x0
-
-    const/16 v22, 0x0
-
-    const/16 v23, 0x0
-
-    move-object/from16 v25, v11
-
-    invoke-static/range {v15 .. v27}, LK/V1;->g(LJ1/a;LZ/o;ZLg0/S;LK/n;LK/r;Lo/u;Lt/I;Ls/k;LJ1/f;LN/p;II)V
 
     :goto_2
     return-object v6
