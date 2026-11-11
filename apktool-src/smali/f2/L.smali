@@ -119,11 +119,145 @@
 
     const v39, 0xfffe
 
-    :goto_2
-    return-object v6
+    const-string v14, "\u0414\u0430\u043d\u043d\u044b\u0435"
 
-    :goto_2
-    return-object v6
+    move-object/from16 p1, v15
+
+    move-object v15, v14
+
+    const/16 v16, 0x0
+
+    const-wide/16 v17, 0x0
+
+    const-wide/16 v19, 0x0
+
+    const/16 v21, 0x0
+
+    const/16 v22, 0x0
+
+    const/16 v23, 0x0
+
+    const-wide/16 v24, 0x0
+
+    const/16 v26, 0x0
+
+    const/16 v27, 0x0
+
+    const-wide/16 v28, 0x0
+
+    const/16 v30, 0x0
+
+    const/16 v31, 0x0
+
+    const/16 v32, 0x0
+
+    const/16 v33, 0x0
+
+    const/16 v34, 0x0
+
+    const/16 v37, 0x6
+
+    move-object/from16 v35, v3
+
+    move-object/from16 v36, p1
+
+    invoke-static/range {v15 .. v39}, LK/r2;->b(Ljava/lang/String;LZ/o;JJLL0/j;LL0/l;LL0/r;JLR0/j;LR0/i;JIZIILJ1/c;LG0/J;LN/p;III)V
+
+    int-to-float v3, v3
+
+    invoke-static {v4, v3}, Landroidx/compose/foundation/layout/c;->c(LZ/o;F)LZ/o;
+
+    move-result-object v3
+
+    move-object/from16 v11, p1
+
+    invoke-static {v11, v3}, Lt/c;->a(LN/p;LZ/o;)V
+
+    check-cast v10, Ld2/b;
+
+    invoke-virtual {v10}, Ld2/b;->b()Ljava/util/List;
+
+    move-result-object v3
+
+    invoke-interface {v3}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    const-string v14, "\u0417\u0430\u043f\u0438\u0441\u0435\u0439 \u0432 \u0431\u0430\u0437\u0435: "
+
+    invoke-static {v14, v3}, LA/a0;->d(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-virtual {v11, v5}, LN/p;->k(LN/p0;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, LK/w2;
+
+    iget-object v3, v3, LK/w2;->l:LG0/J;
+
+    sget-object v5, LK/z;->a:LN/S0;
+
+    invoke-virtual {v11, v5}, LN/p;->k(LN/p0;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, LK/x;
+
+    iget-wide v13, v5, LK/x;->s:J
+
+    const/16 v38, 0x0
+
+    const v39, 0xfffa
+
+    const/16 v16, 0x0
+
+    const-wide/16 v19, 0x0
+
+    const/16 v21, 0x0
+
+    const/16 v22, 0x0
+
+    const/16 v23, 0x0
+
+    const-wide/16 v24, 0x0
+
+    const/16 v26, 0x0
+
+    const/16 v27, 0x0
+
+    const-wide/16 v28, 0x0
+
+    const/16 v30, 0x0
+
+    const/16 v31, 0x0
+
+    const/16 v32, 0x0
+
+    const/16 v33, 0x0
+
+    const/16 v34, 0x0
+
+    const/16 v37, 0x0
+
+    move-wide/from16 v17, v13
+
+    move-object/from16 v35, v3
+
+    move-object/from16 v36, v11
+
+    invoke-static/range {v15 .. v39}, LK/r2;->b(Ljava/lang/String;LZ/o;JJLL0/j;LL0/l;LL0/r;JLR0/j;LR0/i;JIZIILJ1/c;LG0/J;LN/p;III)V
+
+    const/16 v3, 0xe
+
+    int-to-float v3, v3
+
+    invoke-static {v4, v3}, Landroidx/compose/foundation/layout/c;->c(LZ/o;F)LZ/o;
+
+    move-result-object v5
+
+    invoke-static {v11, v5}, Lt/c;->a(LN/p;LZ/o;)V
 
     sget-object v5, Lt/j;->c:Lt/d;
 
