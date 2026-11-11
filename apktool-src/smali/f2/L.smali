@@ -119,59 +119,8 @@
 
     const v39, 0xfffe
 
-    const-string v14, "\u0414\u0430\u043d\u043d\u044b\u0435"
-
-    move-object/from16 p1, v15
-
-    move-object v15, v14
-
-    const/16 v16, 0x0
-
-    const-wide/16 v17, 0x0
-
-    const-wide/16 v19, 0x0
-
-    const/16 v21, 0x0
-
-    const/16 v22, 0x0
-
-    const/16 v23, 0x0
-
-    const-wide/16 v24, 0x0
-
-    const/16 v26, 0x0
-
-    const/16 v27, 0x0
-
-    const-wide/16 v28, 0x0
-
-    const/16 v30, 0x0
-
-    const/16 v31, 0x0
-
-    const/16 v32, 0x0
-
-    const/16 v33, 0x0
-
-    const/16 v34, 0x0
-
-    const/16 v37, 0x6
-
-    move-object/from16 v35, v11
-
-    move-object/from16 v36, p1
-
-    invoke-static/range {v15 .. v39}, LK/r2;->b(Ljava/lang/String;LZ/o;JJLL0/j;LL0/l;LL0/r;JLR0/j;LR0/i;JIZIILJ1/c;LG0/J;LN/p;III)V
-
-    int-to-float v3, v3
-
-    invoke-static {v4, v3}, Landroidx/compose/foundation/layout/c;->c(LZ/o;F)LZ/o;
-
-    move-result-object v3
-
-    move-object/from16 v11, p1
-
-    invoke-static {v11, v3}, Lt/c;->a(LN/p;LZ/o;)V
+    :goto_2
+    return-object v6
 
     :goto_2
     return-object v6
