@@ -157,7 +157,7 @@
 
     const/16 v37, 0x6
 
-    move-object/from16 v35, v3
+    move-object/from16 v35, v11
 
     move-object/from16 v36, p1
 
@@ -171,7 +171,7 @@
 
     move-object/from16 v11, p1
 
-    invoke-static {v11, v3}, Lt/c;->a(LN/p;LZ/o;)V
+    nop
 
     check-cast v10, Ld2/b;
 
