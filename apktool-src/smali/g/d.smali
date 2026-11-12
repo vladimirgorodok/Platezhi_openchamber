@@ -276,7 +276,7 @@
 
     invoke-virtual {p1, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    const-string v0, "text/csv"
+    const-string v0, "*/*"
 
     invoke-virtual {p1, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 

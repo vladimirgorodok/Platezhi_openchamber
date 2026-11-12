@@ -21,6 +21,32 @@
     <public type="color" name="window_background" id="0x7f020009" />
     <public type="drawable" name="ic_launcher_foreground" id="0x7f040006" />
     <public type="drawable" name="ic_stat_payment" id="0x7f040007" />
+    <public type="drawable" name="logo_beeline" id="0x7f040008" />
+    <public type="drawable" name="logo_mts" id="0x7f040009" />
+    <public type="drawable" name="logo_megafon" id="0x7f04000a" />
+    <public type="drawable" name="logo_tele2" id="0x7f04000b" />
+    <public type="drawable" name="logo_rostelecom" id="0x7f04000c" />
+    <public type="drawable" name="logo_yandex" id="0x7f04000d" />
+    <public type="drawable" name="logo_vk" id="0x7f04000e" />
+    <public type="drawable" name="logo_ok" id="0x7f04000f" />
+    <public type="drawable" name="logo_sber" id="0x7f040010" />
+    <public type="drawable" name="logo_vtb" id="0x7f040011" />
+    <public type="drawable" name="logo_tinkoff" id="0x7f040012" />
+    <public type="drawable" name="logo_alfabank" id="0x7f040013" />
+    <public type="drawable" name="logo_gazprom" id="0x7f040014" />
+    <public type="drawable" name="logo_lukoil" id="0x7f040015" />
+    <public type="drawable" name="logo_magnit" id="0x7f040016" />
+    <public type="drawable" name="logo_wildberries" id="0x7f040017" />
+    <public type="drawable" name="logo_ozon" id="0x7f040018" />
+    <public type="drawable" name="logo_avito" id="0x7f040019" />
+    <public type="drawable" name="logo_lenta" id="0x7f04001a" />
+    <public type="drawable" name="logo_yota" id="0x7f04001b" />
+    <public type="drawable" name="logo_pochta" id="0x7f04001c" />
+    <public type="drawable" name="logo_raiffeisen" id="0x7f04001d" />
+    <public type="drawable" name="logo_rzd" id="0x7f04001e" />
+    <public type="drawable" name="logo_citilink" id="0x7f04001f" />
+    <public type="drawable" name="logo_gosuslugi" id="0x7f040020" />
+    <public type="drawable" name="logo_mtsbank" id="0x7f040021" />
     <public type="id" name="accessibility_action_clickable_span" id="0x7f050000" />
     <public type="id" name="accessibility_custom_action_0" id="0x7f050001" />
     <public type="id" name="accessibility_custom_action_1" id="0x7f050002" />

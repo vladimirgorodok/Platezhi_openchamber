@@ -3637,7 +3637,11 @@
 
     int-to-float v4, v4
 
-    invoke-static {v13, v4}, Landroidx/compose/foundation/layout/b;->g(LZ/o;F)LZ/o;
+    const/16 v8, 0xa
+
+    int-to-float v8, v8
+
+    invoke-static {v13, v4, v8}, Landroidx/compose/foundation/layout/b;->h(LZ/o;FF)LZ/o;
 
     move-result-object v4
 
@@ -3897,7 +3901,7 @@
 
     invoke-virtual {v0, v7}, LN/p;->q(Z)V
 
-    const/16 v8, 0xe
+    const/16 v8, 0x6
 
     int-to-float v8, v8
 
@@ -4073,7 +4077,7 @@
 
     invoke-static/range {v7 .. v31}, LK/r2;->b(Ljava/lang/String;LZ/o;JJLL0/j;LL0/l;LL0/r;JLR0/j;LR0/i;JIZIILJ1/c;LG0/J;LN/p;III)V
 
-    const/16 v7, 0x10
+    const/16 v7, 0x8
 
     int-to-float v7, v7
 
@@ -4109,7 +4113,7 @@
 
     invoke-static/range {v7 .. v15}, LS0/j;->p(FIIJJLN/p;LZ/o;)V
 
-    const/16 v7, 0xa
+    const/16 v7, 0x4
 
     int-to-float v7, v7
 

@@ -24,6 +24,8 @@
 
 .field public static final j:LV/a;
 
+.field public static final k:LV/a;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -130,6 +132,18 @@
     invoke-direct {v1, v2, v0, v3}, LV/a;-><init>(ILjava/lang/Object;Z)V
 
     sput-object v1, Lf2/a0;->j:LV/a;
+
+    new-instance v0, Lf2/Lbl;
+
+    invoke-direct {v0}, Lf2/Lbl;-><init>()V
+
+    new-instance v1, LV/a;
+
+    const v2, 0x5f3a1d7c
+
+    invoke-direct {v1, v2, v0, v3}, LV/a;-><init>(ILjava/lang/Object;Z)V
+
+    sput-object v1, Lf2/a0;->k:LV/a;
 
     return-void
 .end method

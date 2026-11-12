@@ -7332,6 +7332,26 @@
 
     move-result-object v9
 
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v11
+
+    const v10, 0x7f020009
+
+    invoke-virtual {v11, v10}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v10
+
+    invoke-static {v10}, Lg0/M;->c(I)J
+
+    move-result-wide v10
+
+    sget-object v13, Lg0/M;->a:LL0/a;
+
+    invoke-static {v9, v10, v11, v13}, Landroidx/compose/foundation/a;->b(LZ/o;JLg0/S;)LZ/o;
+
+    move-result-object v9
+
     invoke-static {v9}, Lt/c;->e(LZ/o;)LZ/o;
 
     move-result-object v9

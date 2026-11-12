@@ -461,38 +461,7 @@
 
     invoke-virtual {v11, v12}, LN/p;->q(Z)V
 
-    const v5, 0x2d235b6d
-
-    invoke-virtual {v11, v5}, LN/p;->S(I)V
-
-    invoke-virtual {v11}, LN/p;->I()Ljava/lang/Object;
-
-    move-result-object v5
-
-    if-ne v5, v13, :cond_7c
-
-    new-instance v5, Lf2/Lbl;
-
-    invoke-direct {v5}, Lf2/Lbl;-><init>()V
-
-    new-instance v8, LV/a;
-
-    const v1, 0x2d235b6e
-
-    const/4 v2, 0x0
-
-    invoke-direct {v8, v1, v5, v2}, LV/a;-><init>(ILjava/lang/Object;Z)V
-
-    move-object v5, v8
-
-    invoke-virtual {v11, v5}, LN/p;->c0(Ljava/lang/Object;)V
-
-    :cond_7c
-    move-object/from16 v24, v5
-
-    check-cast v24, LV/a;
-
-    invoke-virtual {v11, v12}, LN/p;->q(Z)V
+    sget-object v24, Lf2/a0;->k:LV/a;
 
     sget-object v2, Lt/P;->a:Lt/P;
 

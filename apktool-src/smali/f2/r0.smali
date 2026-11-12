@@ -46,6 +46,53 @@
 .method public final h(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 55
 
+    # === AI поиск логотипа: кнопка "Найти логотип" ===
+    move-object/from16 v2, p0
+    move-object/from16 v3, p1
+    iget-object v4, v2, Lf2/r0;->h:LN/c0;
+    iget-object v5, v2, Lf2/r0;->d:LN/c0;
+    iget-object v6, v2, Lf2/r0;->f:LN/c0;
+    iget-object v7, v2, Lf2/r0;->g:Ld2/f;
+    sget-object v8, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->b:LN/S0;
+    invoke-virtual {v3, v8}, LN/p;->k(LN/p0;)Ljava/lang/Object;
+    move-result-object v8
+    check-cast v8, Landroid/content/Context;
+    iget-object v9, v7, Ld2/f;->b:Ljava/lang/String;
+    new-instance v10, Lf2/z2;
+    move-object/from16 v11, v4
+    move-object/from16 v12, v5
+    move-object/from16 v13, v6
+    move-object/from16 v14, v7
+    move-object/from16 v15, v8
+    move-object/from16 v16, v9
+    invoke-direct/range {v10 .. v16}, Lf2/z2;-><init>(LN/c0;LN/c0;LN/c0;Ld2/f;Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v3}, LK/V1;->j(LN/p;)LK/w2;
+    move-result-object v11
+    iget-object v11, v11, LK/w2;->o:LG0/J;
+    move-object/from16 v23, v10
+    move-object/from16 v24, v11
+    move-object/from16 v25, v3
+    const-string v4, "\u041d\u0430\u0439\u0442\u0438 \u043b\u043e\u0433\u043e\u0442\u0438\u043f"
+    const/4 v5, 0x0
+    move-wide/from16 v6, v5
+    move-wide/from16 v8, v5
+    move/from16 v10, v5
+    move/from16 v11, v5
+    move/from16 v12, v5
+    move-wide/from16 v13, v5
+    move/from16 v15, v5
+    move/from16 v16, v5
+    move-wide/from16 v17, v5
+    move/from16 v19, v5
+    move/from16 v20, v5
+    move/from16 v21, v5
+    move/from16 v22, v5
+    move/from16 v26, v5
+    move/from16 v27, v5
+    move/from16 v28, v5
+    invoke-static/range {v4 .. v28}, LK/r2;->b(Ljava/lang/String;LZ/o;JJLL0/j;LL0/l;LL0/r;JLR0/j;LR0/i;JIZIILJ1/c;LG0/J;LN/p;III)V
+    # === end AI логотип ===
+
     move-object/from16 v0, p0
 
     const/4 v1, 0x2
