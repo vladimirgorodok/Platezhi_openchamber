@@ -32,7 +32,7 @@
     return-void
 .end method
 
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final k(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 9
 
     new-instance v1, Ljava/lang/Thread;
