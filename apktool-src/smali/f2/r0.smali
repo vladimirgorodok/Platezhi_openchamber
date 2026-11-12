@@ -47,8 +47,9 @@
     .locals 55
 
     # === AI поиск логотипа: кнопка "Найти логотип" ===
+    # NB: at entry p0=this(r0), p1=AppCardScope(t/s), p2=Composer(N/p), p3=flags
     move-object/from16 v2, p0
-    move-object/from16 v3, p1
+    move-object/from16 v3, p2
     iget-object v4, v2, Lf2/r0;->h:LN/c0;
     iget-object v5, v2, Lf2/r0;->d:LN/c0;
     iget-object v6, v2, Lf2/r0;->f:LN/c0;

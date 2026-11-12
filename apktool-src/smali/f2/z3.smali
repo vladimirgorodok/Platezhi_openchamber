@@ -87,7 +87,7 @@
 
     sget-object v5, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
     const/16 v6, 0x5a
-    invoke-virtual {v1, v5, v6, v4}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;IILjava/io/OutputStream;)Z
+    invoke-virtual {v1, v5, v6, v4}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
     invoke-virtual {v4}, Ljava/io/OutputStream;->close()V
 
     invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
@@ -185,24 +185,22 @@
     const-string v9, "imageinfo"
     invoke-virtual {v8, v9}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
     move-result-object v9
-    const/4 v8, 0x0
-    invoke-virtual {v9, v8}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+    const/4 v10, 0x0
+    invoke-virtual {v9, v10}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
     move-result-object v8
     const-string v9, "thumburl"
     invoke-virtual {v8, v9}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
     move-result-object v9
     invoke-virtual {v9}, Ljava/lang/String;->isEmpty()Z
-    move-result v8
-    if-nez v8, :use_url_field
-    goto :have_url
-    :use_url_field
-    invoke-virtual {v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    move-result v10
+    if-eqz v10, :have_url
+    const-string v9, "url"
+    invoke-virtual {v8, v9}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
     move-result-object v9
-    goto :have_url
     :have_url
     invoke-virtual {v9}, Ljava/lang/String;->isEmpty()Z
-    move-result v8
-    if-nez v8, :done
+    move-result v10
+    if-nez v10, :done
 
     new-instance v8, Ljava/net/URL;
     invoke-direct {v8, v9}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
@@ -291,8 +289,8 @@
     new-instance v8, Ljava/io/FileOutputStream;
     invoke-direct {v8, v7}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
     array-length v9, v6
-    const/4 v7, 0x0
-    invoke-virtual {v8, v6, v7, v9}, Ljava/io/OutputStream;->write([BII)V
+    const/4 v10, 0x0
+    invoke-virtual {v8, v6, v10, v9}, Ljava/io/OutputStream;->write([BII)V
     invoke-virtual {v8}, Ljava/io/OutputStream;->close()V
 
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
